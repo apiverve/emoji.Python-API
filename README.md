@@ -1,4 +1,4 @@
-Emoji API
+Emoji Lookup API
 ============
 
 Emoji is a simple tool for getting emoji data. It returns the emoji name, category, and more.
@@ -7,12 +7,12 @@ Emoji is a simple tool for getting emoji data. It returns the emoji name, catego
 ![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
 ![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Emoji API](https://apiverve.com/marketplace/api/emoji)
+This is a Python API Wrapper for the [Emoji Lookup API](https://apiverve.com/marketplace/api/emoji)
 
 ---
 
 ## Installation
-	pip install apiverve-emoji
+	pip install apiverve-emojilookup
 
 ---
 
@@ -25,14 +25,14 @@ You can get it by signing up at [https://apiverve.com](https://apiverve.com)
 
 ## Usage
 
-The Emoji API documentation is found here: [https://docs.apiverve.com/api/emoji](https://docs.apiverve.com/api/emoji).  
+The Emoji Lookup API documentation is found here: [https://docs.apiverve.com/api/emoji](https://docs.apiverve.com/api/emoji).  
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ```
 # Import the client module
-from apiverve_emoji.apiClient import EmojiAPIClient
+from apiverve_emojilookup.apiClient import EmojiAPIClient
 
 # Initialize the client with your APIVerve API key
 api = EmojiAPIClient("[YOUR_API_KEY]")
@@ -47,7 +47,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-query = { "tag": "smile" }
+query = { "emoji": "🥳" }
 ```
 
 ###### Simple Request
@@ -70,19 +70,19 @@ print(result)
     "count": 1,
     "emojisFound": [
       {
-        "emoji": "😀",
-        "description": "grinning face",
+        "emoji": "🥳",
+        "description": "partying face",
         "category": "Smileys & Emotion",
         "aliases": [
-          "grinning"
+          "partying_face"
         ],
         "tags": [
-          "smile",
-          "happy"
+          "celebration",
+          "birthday"
         ],
-        "unicode_version": "6.1",
-        "ios_version": "6.0",
-        "codePoint": "1f600"
+        "unicode_version": "11.0",
+        "ios_version": "12.1",
+        "codePoint": "1f973"
       }
     ]
   }
