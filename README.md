@@ -85,7 +85,8 @@ print(result)
         "codePoint": "1f973"
       }
     ]
-  }
+  },
+  "code": 200
 }
 ```
 
